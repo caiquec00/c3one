@@ -7,6 +7,7 @@
   --logo-light: #f8f9fa;
 }
 
+/* Reset */
 * {
   box-sizing: border-box;
   padding: 0;
@@ -20,13 +21,55 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
   color: var(--logo-dark);
+  background-color: var(--logo-light);
 }
 
+/* Links */
 a {
   color: var(--logo-blue);
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
 a:hover {
   color: var(--logo-green);
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: var(--logo-green);
+  color: var(--logo-white);
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--logo-blue);
+}
+
+/* Responsive images */
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--logo-dark);
+}
+
+/* Utility classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
