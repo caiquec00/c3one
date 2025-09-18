@@ -11,7 +11,7 @@
     "target": "esnext",
 
     // Types
-    "types": ["node", "./types"],
+    "types": ["node"],
 
     // Other Outputs
     "sourceMap": true,
@@ -51,7 +51,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
-    "types"
+    "types/**/*.d.ts"
   ],
   "exclude": [
     "node_modules"
