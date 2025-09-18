@@ -1,0 +1,133 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--logo-dark);
+  color: var(--logo-white);
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: inherit;
+}
+
+.brandText {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  color: var(--logo-white);
+}
+
+.sup {
+  font-size: 0.7em;
+  vertical-align: super;
+  margin-left: 1px;
+  margin-right: 2px;
+  color: var(--logo-green);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.link {
+  color: var(--logo-white);
+  opacity: 0.9;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.link:hover {
+  opacity: 1;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.active {
+  background: rgba(255, 255, 255, 0.14);
+  color: var(--logo-white);
+}
+
+.cta {
+  margin-left: 10px;
+  background: var(--logo-blue);
+  color: var(--logo-white);
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.cta:hover {
+  background: var(--logo-green);
+  color: var(--logo-dark);
+}
+
+/* Burger (mobile) */
+.burger {
+  display: none;
+  width: 40px;
+  height: 32px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  gap: 5px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--logo-white);
+  border-radius: 2px;
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+  .burger {
+    display: flex;
+  }
+  .nav {
+    position: absolute;
+    top: 60px;
+    right: 12px;
+    left: 12px;
+    display: none;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 12px;
+    background: var(--logo-dark);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 12px;
+  }
+  .nav.open {
+    display: flex;
+  }
+  .cta {
+    text-align: center;
+  }
+}

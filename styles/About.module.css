@@ -1,0 +1,228 @@
+.navbar {
+  background: var(--logo-white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.navLogo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--logo-blue);
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.navLinks a {
+  color: var(--logo-dark);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navLinks a:hover {
+  color: var(--logo-blue);
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, var(--logo-light), var(--logo-white));
+}
+
+.heroContent h1 {
+  font-size: 2.5rem;
+  color: var(--logo-blue);
+  margin: 20px 0 10px;
+}
+
+.sup {
+  font-size: 0.6em;
+  vertical-align: super;
+  margin-left: 2px;
+  color: var(--logo-green);
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  color: var(--logo-gray);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.logo {
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.mission {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.mission h2 {
+  font-size: 2rem;
+  color: var(--logo-blue);
+  margin-bottom: 20px;
+}
+
+.mission p {
+  font-size: 1.1rem;
+  color: var(--logo-gray);
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.pillars {
+  padding: 60px 20px;
+  background: var(--logo-light);
+}
+
+.pillars h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--logo-blue);
+  margin-bottom: 40px;
+}
+
+.pillarsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.pillar {
+  background: var(--logo-white);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pillarIcon {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.pillar h3 {
+  color: var(--logo-blue);
+  margin-bottom: 15px;
+}
+
+.pillar p {
+  color: var(--logo-gray);
+  line-height: 1.6;
+}
+
+.values {
+  padding: 60px 20px;
+}
+
+.values h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--logo-blue);
+  margin-bottom: 40px;
+}
+
+.valuesList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.value {
+  background: var(--logo-white);
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 4px solid var(--logo-green);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.value strong {
+  color: var(--logo-blue);
+}
+
+.cta {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--logo-dark);
+  color: var(--logo-white);
+  border-radius: 12px;
+  margin: 40px 0;
+}
+
+.cta h2 {
+  margin-bottom: 30px;
+}
+
+.ctaButton,
+.ctaButtonSecondary {
+  display: inline-block;
+  padding: 15px 25px;
+  margin: 0 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.ctaButton {
+  background: var(--logo-green);
+  color: var(--logo-white);
+}
+
+.ctaButton:hover {
+  background: var(--logo-white);
+  color: var(--logo-blue);
+}
+
+.ctaButtonSecondary {
+  background: transparent;
+  color: var(--logo-white);
+  border: 2px solid var(--logo-white);
+}
+
+.ctaButtonSecondary:hover {
+  background: var(--logo-white);
+  color: var(--logo-dark);
+}
+
+@media (max-width: 768px) {
+  .pillarsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .valuesList {
+    grid-template-columns: 1fr;
+  }
+  
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+}

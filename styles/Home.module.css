@@ -1,0 +1,230 @@
+.navbar {
+  background: var(--logo-white);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.navLogo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--logo-blue);
+}
+
+.navLinks {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.navLinks a {
+  color: var(--logo-dark);
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navLinks a:hover {
+  color: var(--logo-blue);
+}
+
+.navCta {
+  background: var(--logo-green) !important;
+  color: var(--logo-white) !important;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.navCta:hover {
+  background: var(--logo-blue) !important;
+}
+
+.hero {
+  background: linear-gradient(135deg, var(--logo-blue), var(--logo-dark));
+  color: var(--logo-white);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.heroContent h1 {
+  font-size: 3rem;
+  margin: 20px 0 10px;
+}
+
+.sup {
+  font-size: 0.6em;
+  vertical-align: super;
+  margin-left: 2px;
+  color: var(--logo-green);
+}
+
+.heroContent p {
+  font-size: 1.3rem;
+  margin-bottom: 30px;
+}
+
+.logo {
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.cta {
+  display: inline-block;
+  padding: 15px 25px;
+  background: var(--logo-green);
+  color: var(--logo-white);
+  font-weight: bold;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: var(--logo-white);
+  color: var(--logo-blue);
+}
+
+.about {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--logo-light);
+}
+
+.about h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: var(--logo-blue);
+}
+
+.aboutGrid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background: var(--logo-white);
+  border-radius: 12px;
+  padding: 30px 20px;
+  max-width: 280px;
+  flex: 1;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.emoji {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.services {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.services h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: var(--logo-blue);
+}
+
+.serviceGrid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.finalCta {
+  text-align: center;
+  padding: 80px 20px;
+  background: var(--logo-dark);
+  color: var(--logo-white);
+}
+
+.finalCta h2 {
+  margin-bottom: 20px;
+}
+
+.footer {
+  background: var(--logo-dark);
+  color: var(--logo-white);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.footerLinks {
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footerLinks a {
+  color: var(--logo-white);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.footerLinks a:hover {
+  opacity: 1;
+  color: var(--logo-green);
+}
+
+.emails {
+  margin: 20px 0;
+}
+
+.emails a {
+  color: var(--logo-green);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.copy {
+  margin-top: 15px;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    gap: 15px;
+  }
+  
+  .heroContent h1 {
+    font-size: 2rem;
+  }
+  
+  .aboutGrid,
+  .serviceGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

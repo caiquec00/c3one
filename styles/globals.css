@@ -1,0 +1,32 @@
+:root {
+  --logo-blue: #4a90e2;
+  --logo-green: #a4c63d;
+  --logo-dark: #2c3e50;
+  --logo-white: #ffffff;
+  --logo-gray: #6b7280;
+  --logo-light: #f8f9fa;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--logo-dark);
+}
+
+a {
+  color: var(--logo-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--logo-green);
+}
