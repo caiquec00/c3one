@@ -14,8 +14,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     port: 465,
     secure: true,
     auth: {
-      user: "contact@c3one.com", // seu e-mail Zoho
-      pass: process.env.ZOHO_PASS, // senha do app password
+      user: "contact@c3one.com",
+      pass: process.env.ZOHO_PASS,
     },
   });
 
