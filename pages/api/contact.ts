@@ -14,8 +14,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     port: 465,
     secure: true,
     auth: {
-      user: "contact@c3one.com", // seu Zoho Mail
-      pass: process.env.ZOHO_PASS, // senha app password
+      user: "contact@c3one.com", // seu e-mail Zoho
+      pass: process.env.ZOHO_PASS, // senha do app password
     },
   });
 
@@ -32,7 +32,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     });
 
     return res.status(200).json({ message: "Mensagem enviada com sucesso!" });
-  } catch (error) {
+  } catch (error: any) {
     console.error("Erro ao enviar e-mail:", error);
     return res.status(500).json({ message: "Erro ao enviar mensagem." });
   }
