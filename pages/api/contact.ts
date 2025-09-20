@@ -9,13 +9,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const { name, email, message } = req.body;
 
   // Configuração do Zoho SMTP
-  const transporter = nodemailer.createTransporter({
+  const transporter = nodemailer.createTransport({
     host: "smtp.zoho.com",
     port: 465,
     secure: true,
     auth: {
-      user: "contact@c3one.com",
-      pass: process.env.ZOHO_PASS, // ✅ corrigido
+      user: "contact@c3one.com", // seu Zoho Mail
+      pass: process.env.ZOHO_PASS, // senha app password
     },
   });
 
