@@ -8,6 +8,10 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   const { name, email, message } = req.body;
 
+  // Debug temporário (pode remover depois)
+  console.log("Auth user:", "contact@c3one.com");
+  console.log("Password length:", process.env.ZOHO_CONTACT_PASS?.length);
+
   // Configuração do Zoho SMTP
   const transporter = nodemailer.createTransport({
     host: "smtp.zoho.com",
@@ -15,14 +19,15 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     secure: true,
     auth: {
       user: "contact@c3one.com",
-      pass: process.env.ZOHO_PASS,
+      pass: process.env.ZOHO_CONTACT_PASS, // ✅ CORRIGIDO
     },
   });
 
   try {
     await transporter.sendMail({
       from: `"Site C3 One" <contact@c3one.com>`,
-      to: "contact@c3one.com, support@c3one.com",
+      to: "contact@c3one.com",
+      bcc: "support@c3one.com", // ✅ Melhor usar bcc em vez de to com vírgula
       replyTo: email,
       subject: `Novo contato do site - ${name}`,
       text: message,
