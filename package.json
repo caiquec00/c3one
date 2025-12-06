@@ -13,10 +13,10 @@
   "description": "",
   "dependencies": {
     "dotenv": "^17.2.2",
-    "next": "^15.5.3",
+    "next": "^15.5.7",
     "nodemailer": "^7.0.6",
-    "react": "^19.1.1",
-    "react-dom": "^19.1.1"
+    "react": "^19.1.2",
+    "react-dom": "^19.1.2"
   },
   "devDependencies": {
     "@types/node": "^24.5.1",
